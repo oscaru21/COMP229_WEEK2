@@ -9,12 +9,11 @@
 <body>
     <script>
         //callback function example
-        function greet(name, myFunction){
+        function greet(){
             console.log('Hello World!')
 
-            //callback function
             //executed only after the greet function is executed
-            myFunction(name)
+            sayName('John')
         }
 
         //callback function
@@ -23,7 +22,7 @@
         }
 
         //calling the function after two seconds
-        setTimeout(greet, 2000, 'John', sayName)
+        setTimeout(greet, 2000)
     </script>
 </body>
 </html>
